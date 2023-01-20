@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+.wrapper{
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    /* border: 2px solid red; */
+    perspective: 10px;
+    overflow-x: hidden;
+    z-index: -1;
+}
+
+.main{
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.bannerContainer{
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.bannerContainer{
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-flow: column;
+}
+
+.bannerContainer h1{
+    text-align: center;
+    position:relative;
+    top:-600px;
+    color: white;
+    font-size: 90px;
+
+}
+
+.background{
+    width: 100%;
+    height: 100%;
+    transform: translateZ(-100px);
+    /* transform: scale(1); */
+    scale: 12;
+}
+
+.foreground{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateZ(-20px);
+    scale: 3;
+}
+
+.bannerData{
+    position: relative;
+    z-index: 1;
+    background-color: rgb(45, 45, 45);
+    width: 100%;
+    /* height: 100vh; */
+    padding:150px;
+    color: white;
+}
+
+.bannerData h1{
+    /* color: white; */
+    font-size: 80px;
+    margin-bottom: 70px;
+    color: white;
+}
+
+.bannerData p{
+    font-size: 30px;
+}
+
+.newBanner{
+    position: relative;
+}
+
+.secondry{
+    position: relative;
+    /* height: 100vh; */
+    /* border: 3px solid rebeccapurple; */
+    background-color: rgb(45, 45, 45);
+
+}
+
+.secondryData{
+    height: 100%;
+    background-color: rgb(45, 45, 45);
+    color: white;
+}
+
+.heading{
+    font-size: 30px;
+    /* border: 2px solid white; */
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/images/sport-1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.p1{
+    background-color: rgb(45, 45, 45);
+    width: 100%;
+    padding:150px 150px 20px 150px;
+    color: white;
+    font-size: 30px;
+}
+
+.p2{
+    background-color: rgb(45, 45, 45);
+    width: 100%;
+    padding:0 150px;
+    color: white;
+    font-size: 30px;
+    padding-bottom: 100px;
+}
+
+.bg2{
+    background-image: url("/images/sport-2.jpg");
+}
+
+.bg3{
+    background-image: url("/images/sport-3.jpg");
+}
